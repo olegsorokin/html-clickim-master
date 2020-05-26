@@ -1,0 +1,168 @@
+$color-link: #3d5afe;
+$color-text: #7a838e;
+
+html {
+  font-size: 15px;
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+.link {
+  color: $color-link;
+  text-decoration: none;
+}
+
+.link-gray {
+  color: #7A838E;
+}
+
+.login {
+  display: flex;
+  min-height: 100vh;
+  color: $color-text;
+}
+
+.login-section {
+  width: 33.33%;
+}
+
+.login-content {
+  position: relative;
+  display: flex;
+  width: 66.66%;
+  padding: 40px 50px;
+  box-sizing: border-box;
+}
+
+.login-top {
+  position: absolute;
+  top: 40px;
+  right: 50px;
+  color: #313131;
+  text-align: right;
+}
+
+.login-form {
+  width: 100%;
+  max-width: 380px;
+  margin: auto;
+}
+
+.login-title {
+  font-size: 18px;
+  color: #1B2331;
+  letter-spacing: 2.05px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.login-or {
+  display: flex;
+  margin: 25px 0;
+  text-align: center;
+  color: #7A838E;
+}
+
+.login-or:before {
+  content: '';
+  width: 50%;
+  height: 1px;
+  margin: auto 8px auto 0;
+  border-top: 1px solid #D8DFE5;
+}
+
+.login-or:after {
+  content: '';
+  width: 50%;
+  height: 1px;
+  margin: auto 0 auto 8px;
+  border-top: 1px solid #D8DFE5;
+}
+
+.slider {
+  position: relative;
+  display: flex;
+  width: 100%;
+  min-height: 100%;
+}
+
+.slider-list {
+  display: flex;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  overflow: hidden;
+}
+
+.slider-item {
+  width: 100%;
+  padding: 40px 50px;
+  flex-shrink: 0;
+  background-image: url('../../assets/img/bg-robots@2x.jpg'), linear-gradient(231deg, #3A495F 0%, #0C1016 100%);
+  background-size: cover;
+  box-sizing: border-box;
+}
+
+.slider-pagination {
+  position: absolute;
+  right: 50px;
+}
+
+.form {}
+
+.form-row {
+  margin-bottom: 20px;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #1B2331;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 15px 20px;
+  line-height: 20px;
+  font-size: 15px;
+  background: #FFFFFF;
+  border: 1px solid #D8DAE5;
+  box-sizing: border-box;
+}
+
+.form-control-wrap {
+  position: relative;
+}
+
+.form-control-link {
+  position: absolute;
+  bottom: calc(100% + 8px);
+  right: 0;
+  text-align: right;
+  font-size: 12px;
+}
+
+.button {
+  display: block;
+  width: 100%;
+  padding: 15px 20px;
+  line-height: 20px;
+  font-size: 15px;
+  border: 1px solid #D8DAE5;
+  box-sizing: border-box;
+  background: #3D5AFE;
+  border-radius: 3px;
+  color: #FFFFFF;
+  letter-spacing: 1.4px;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+}
