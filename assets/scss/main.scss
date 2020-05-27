@@ -2,6 +2,14 @@ $color-link: #3d5afe;
 $color-link-gray: #7a838e;
 $color-text: #7a838e;
 $color-error: #ec5461;
+$color-gray: #313131;
+$color-placeholder: #7a838e;
+$color-black: #1b2331;
+$color-border: #d8dfe5;
+$color-success: #5cb91b;
+$bg-message: #eef3ff;
+$bg-message-error: #ffeaed;
+$color-border-control: #d8dae5;
 
 html {
     font-size: 15px;
@@ -11,11 +19,6 @@ html {
 body {
     margin: 0;
 }
-
-$color-link: #3d5afe;
-$color-link-gray: #7a838e;
-$color-text: #7a838e;
-$color-error: #ec5461;
 
 .icon {
     display: inline-block;
@@ -73,7 +76,7 @@ $color-error: #ec5461;
     position: absolute;
     top: 40px;
     right: 50px;
-    color: #313131;
+    color: $color-gray;
     text-align: right;
 }
 
@@ -81,13 +84,13 @@ $color-error: #ec5461;
     width: 100%;
     max-width: 380px;
     margin: auto;
-    color: #7A838E;
+    color: $color-placeholder;
 }
 
 .login-title {
     font-size: 18px;
     font-weight: 700;
-    color: #1B2331;
+    color: $color-black;
     letter-spacing: 2.05px;
     text-transform: uppercase;
 
@@ -109,7 +112,7 @@ $color-error: #ec5461;
     display: flex;
     margin: 25px 0;
     text-align: center;
-    color: #7A838E;
+    color: $color-placeholder;
 
     &:before,
     &:after {
@@ -118,7 +121,7 @@ $color-error: #ec5461;
         flex-grow: 1;
         height: 1px;
         margin: auto 0;
-        border-top: 1px solid #D8DFE5;
+        border-top: 1px solid $color-border;
     }
 
     &:before {
@@ -136,7 +139,7 @@ $color-error: #ec5461;
 
 .login-form-footer {
     font-size: 12px;
-    color: #7A838E;
+    color: $color-placeholder;
 }
 
 .slider {
@@ -175,13 +178,13 @@ $color-error: #ec5461;
 .form-message {
     margin: 25px 0;
     padding: 15px;
-    background: #EEF3FF;
-    color: #1B2331;
+    background: $bg-message;
+    color: $color-black;
 }
 
 .form-message-error {
     font-size: 14px;
-    background: #FFEAED;
+    background: $bg-message-error;
     text-align: center;
 }
 
@@ -208,14 +211,14 @@ $color-error: #ec5461;
 .form-validation-warning {
     display: block;
     margin-top: 10px;
-    color: #7A838E;
+    color: $color-placeholder;
     font-size: 12px;
 }
 
 .form-validation-success {
     display: block;
     margin-top: 5px;
-    color: #5CB91B;
+    color: $color-success;
     font-size: 12px;
 }
 
@@ -240,14 +243,14 @@ $color-error: #ec5461;
     font-size: 11px;
     font-weight: 700;
     text-transform: uppercase;
-    color: #1B2331;
+    color: $color-black;
     letter-spacing: 1.28px;
 }
 
 .form-label-text {
     font-weight: 400;
     letter-spacing: 0.5px;
-    color: #7A838E;
+    color: $color-placeholder;
 }
 
 .form-control {
@@ -257,19 +260,19 @@ $color-error: #ec5461;
     line-height: 20px;
     font-size: 15px;
     background: #FFFFFF;
-    border: 1px solid #D8DAE5;
+    border: 1px solid $color-border-control;
     box-sizing: border-box;
-    color: #7A838E;
+    color: $color-placeholder;
     appearance: none;
 }
 
 .form-control:focus {
-    border-color: #313131;
+    border-color: $color-gray;
     outline: none;
 }
 
 .form-color-error {
-    background: #FFEAED;
+    background: $bg-message-error;
 }
 
 .form-control-wrap {
